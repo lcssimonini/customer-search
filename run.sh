@@ -2,7 +2,6 @@ run_docker_compose() {
   echo "----- Running docker-compose -----"
   sudo docker-compose --file docker-compose.yml down
   if [ ! "$WITH_CONTAINER" = '-docker' ]; then
-    sudo rm -r kafka-full-stack-volume -f
     sudo docker-compose --file docker-compose.yml up -d
   fi
 }
@@ -17,7 +16,7 @@ run_project() {
   if [ "$WITH_CONTAINER" = '-docker' ]; then
     docker build --t customer-search .
     sudo docker-compose --file ./docker/docker-compose.yml up -d
-    docker logs --tail=500 -f event-config-api
+    docker logs --tail=500 -f customer-search
   else
     ${JAVA_HOME}/bin/java -jar build/libs/CustomerSearch-*.jar
   fi
