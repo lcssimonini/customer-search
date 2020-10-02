@@ -1,0 +1,104 @@
+{
+	"variables": [],
+	"info": {
+		"name": "customer collection",
+		"_postman_id": "28474d8b-e573-5f0b-cb25-56fa42e0ff9e",
+		"description": "collection to test customer endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create customer",
+			"request": {
+				"url": "http://localhost:8081/customersearch/customers",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"birthDate\": \"01/01/2001\",\n  \"document\": \"101010\",\n  \"name\": \"joao\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get customers",
+			"request": {
+				"url": "http://localhost:8081/customersearch/customers",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "list customers"
+			},
+			"response": []
+		},
+		{
+			"name": "update customer",
+			"request": {
+				"url": "http://localhost:8081/customersearch/customers/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"joaquim\"\n}"
+				},
+				"description": "update customer"
+			},
+			"response": []
+		},
+		{
+			"name": "find customer by id",
+			"request": {
+				"url": "http://localhost:8081/customersearch/customers/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "delete by id",
+			"request": {
+				"url": "http://localhost:8081/customersearch/customers/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "patch customer",
+			"request": {
+				"url": "http://localhost:8081/customersearch/customers/1",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"joaquina\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
