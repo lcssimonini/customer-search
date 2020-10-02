@@ -24,3 +24,8 @@ Após, executar o comando do docker-compose para inicializar o banco de dados qu
 na porta padrão (5432) e será criado um volume para persistência dos dados na pasta data/postgres
 
 `docker-compose up`
+
+Para executar de uma vez, o build do projeto, da imagem docker, o docker compose com o banco de dados
+e inicializar a aplicação, executar o comando:
+
+`./run.sh`
