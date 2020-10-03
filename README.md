@@ -1,5 +1,8 @@
 # README #
 
+[![Build Status](https://travis-ci.com/lucas_cs_simonini/CustomerSearch.svg?branch=master)](https://travis-ci.com/lucas_cs_simonini/CustomerSearch)
+
+
 API criada para cadastrar  e consultar clientes.
 
 ### Collection para teste da API ###
