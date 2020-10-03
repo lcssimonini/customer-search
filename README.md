@@ -1,7 +1,7 @@
 # README #
 
 [![Build Status](https://travis-ci.com/lucas_cs_simonini/CustomerSearch.svg?branch=master)](https://travis-ci.com/lucas_cs_simonini/CustomerSearch)
-[![codecov](https://https://codecov.io/bb/lucas_cs_simonini/customersearch/branch/master/graph/badge.svg)](https://https://codecov.io/bb/lucas_cs_simonini/customersearch)
+[![codecov](https://https://codecov.io/bb/lucas_cs_simonini/customersearch/branch/master/graph/badge.svg)](https://codecov.io/bb/lucas_cs_simonini/customersearch)
 
 API criada para cadastrar  e consultar clientes.
 
